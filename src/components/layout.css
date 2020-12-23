@@ -1,38 +1,57 @@
-html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em georgia, serif, sans-serif;
-  box-sizing: border-box;
-  overflow-y: scroll;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+* {
+  margin: 0;
 }
+
 body {
   margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
-  font-weight: normal;
-  word-wrap: break-word;
-  font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
+  font-family: "Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  background: #fafafa;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
+
+a {
+  text-decoration: none;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 2vw;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+header * {
+  color: #666;
+}
+
+header h1 {
+  flex: 3 1;
+}
+
+.desktop_nav {
+  flex: 1 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.desktop_nav a {
+  font-size: 1.4vw;
+  padding: .8vw;
+  border-radius: 10px;
+  transition: 0.5s;
+  border: 1px solid #fafafa;
+  margin: 0 .2vw;
+}
+
+.desktop_nav a:hover {
+  border: 1px solid #000;
+  color: #000;
+}
+ main {
+  padding: 2vw 20vw;
+ }
+ 
 audio,
 canvas,
 progress,
@@ -71,23 +90,7 @@ strong {
 dfn {
   font-style: italic;
 }
-h1 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
-  line-height: 1.1;
-}
+
 mark {
   background-color: #ff0;
   color: #000;
@@ -590,8 +593,20 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
+
+footer {
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+footer p {
+  color: #666;
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    display: block;
+  }
+  .desktop_nav a {
+    font-size: 4vw;
   }
 }
