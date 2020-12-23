@@ -27,13 +27,13 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
-      <ol style={{ listStyle: `none` }}>
+      <SEO title="Инструкции, гайды, лайфхаки, решение проблем с React — React Developer" />
+      <div className="grids">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
-            <li key={post.fields.slug}>
+            <div className="grid_post">
               <article
                 className="post-list-item"
                 itemScope
@@ -56,10 +56,10 @@ const BlogIndex = ({ data, location }) => {
                   />
                 </section>
               </article>
-            </li>
+            </div>
           )
         })}
-      </ol>
+      </div>
     </Layout>
   )
 }

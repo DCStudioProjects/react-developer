@@ -49,9 +49,27 @@ header h1 {
   color: #000;
 }
  main {
-  padding: 2vw 20vw;
+  padding: 2vw 15vw;
  }
  
+ .grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px;
+  margin-top: 32px;
+ }
+ 
+ .grids .grid_post {
+  display: grid;
+  border-radius: 9px;
+  overflow: hidden;
+  line-height: 1.5;
+  background: #fff;
+  box-shadow: 0 0 30px #d5d5d5;
+  padding: 1vw;
+ }
+
+
 audio,
 canvas,
 progress,
@@ -608,5 +626,8 @@ footer p {
   }
   .desktop_nav a {
     font-size: 4vw;
+  }
+  .grids {
+    display: block;
   }
 }
