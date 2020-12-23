@@ -627,6 +627,9 @@ footer p {
   .desktop_nav a {
     font-size: 4vw;
   }
+  main {
+    padding: 2vw;
+  }
   .grids {
     display: block;
   }
