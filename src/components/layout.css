@@ -88,6 +88,13 @@ header h1 {
  .blog-post h1 {
    font-size: 3vw;
  }
+ .posts_nav {
+   background-color: #fff;
+   border: 1px solid #000;
+   border-radius: 50px;
+   padding: 1vw;
+   color: #000;
+ }
 audio,
 canvas,
 progress,
