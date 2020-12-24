@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <header className="top_navbar">
     <h1>
       <Link to="/">
         {siteTitle}

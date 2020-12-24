@@ -33,16 +33,16 @@ const BlogIndex = ({ data, location }) => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
-            <div className="grid_post">
+            <div className="grid_post" key={post.fields.slug}>
               <article
                 className="post-list-item"
                 itemScope
                 itemType="http://schema.org/Article"
               >
                 <header>
-                  <h2>
+                  <h2 className="post_grid_title">
                     <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
+                      {title}
                     </Link>
                   </h2>
                   <small>{post.frontmatter.date}</small>

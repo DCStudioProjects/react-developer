@@ -2,6 +2,7 @@
 title: Hello World
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
+thumbnail: salty_egg.jpg
 ---
 
 This is my first post on my new fake blog! How exciting!
@@ -229,3 +230,34 @@ This paragraph has some `code` in it.
 ![Alt Text](https://placehold.it/200x50 "Image Title")
 
     ![Alt Text](https://placehold.it/200x50 "Image Title")
+### Code Highlighting
+```javascript
+import React from "react"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import Navigation from "../components/navigation"
+
+export default ({ children }) => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `
+  )
+  return (
+    <div className="site-wrapper">
+      <header className="site-header">
+        <div className="site-title">
+          <Link to="/">{data.site.siteMetadata.title}</Link>
+        </div>
+        <Navigation />
+      </header>
+      {children}
+    </div>
+  )
+}
+```
