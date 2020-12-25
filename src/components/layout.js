@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
         <footer>
           <p>© {new Date().getFullYear()}, Built with ❤
           {` `}
-          by Daniil Chistyakov</p>
+          by Daniil Chistyakov.</p>
         </footer>
     </>
   )
