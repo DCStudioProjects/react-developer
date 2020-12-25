@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -39,18 +40,31 @@ header h1 {
   justify-content: space-between;
 }
 
-.desktop_nav a {
+.desktop_nav a, .bio a, button {
   font-size: 1.4vw;
   padding: .8vw;
-  border-radius: 10px;
+  border-radius: 50px;
   transition: 0.5s;
   border: 1px solid #fafafa;
   margin: 0 .2vw;
+  border: none;
 }
 
-.desktop_nav a:hover {
-  border: 1px solid #000;
+.desktop_nav a:hover, .bio a:hover, button:hover {
+  background: #000;
+  color: #fff;
+}
+.bio_title {
+  font-size: 2.5vw;
+}
+.bio_description {
+  font-size: 1.7vw;
+}
+.bio a, button {
   color: #000;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer;
 }
  main {
   padding: 2vw 10vw;
@@ -92,8 +106,20 @@ header h1 {
    background-color: #fff;
    border: 1px solid #000;
    border-radius: 50px;
-   padding: 1vw;
+   padding: .6vw;
    color: #000;
+ }
+ .blog-post-nav {
+  display: flex;
+  justify-content: space-between;
+ }
+ input {
+  font-size: 1.3vw;
+  border-radius: 50px;
+  border: 1px solid #000;
+  padding: 1vw;
+  outline: 0;
+  margin-bottom: 1vw;
  }
 audio,
 canvas,
@@ -201,14 +227,7 @@ hr {
   border: none;
   height: 1px;
 }
-button,
-input,
-optgroup,
-select,
-textarea {
-  font: inherit;
-  margin: 0;
-}
+
 optgroup {
   font-weight: 700;
 }
@@ -287,15 +306,7 @@ textarea {
   -webkit-appearance: button;
   font: inherit;
 }
-* {
-  box-sizing: inherit;
-}
-*:before {
-  box-sizing: inherit;
-}
-*:after {
-  box-sizing: inherit;
-}
+
 h2 {
   margin-left: 0;
   margin-right: 0;
@@ -643,14 +654,29 @@ footer {
 
 footer p {
   color: #666;
+  margin-left: 2vw;
 }
 
 @media only screen and (max-width: 767px) {
   .top_navbar {
     display: block;
   }
+  .desktop_nav {
+    overflow-x: auto;
+  }
   .desktop_nav a {
     font-size: 4.5vw;
+    padding: 2vw;
+  }
+  .bio_title {
+    font-size: 7vw;
+  }
+  .bio_description {
+    font-size: 5vw;
+  }
+  .bio a {
+    font-size: 5vw;
+    padding: 2vw;
   }
   main {
     padding: 2vw;
@@ -658,6 +684,7 @@ footer p {
   .grids {
     display: block;
     margin: 0;
+    margin-top: 6vw;
   }
   .grid_post {
     margin: 3vw 1vw;
@@ -670,5 +697,9 @@ footer p {
   }
   .posts_nav {
     padding: 2vw;
+  }
+  input, button {
+    font-size: 4vw;
+    padding: 3vw;
   }
 }

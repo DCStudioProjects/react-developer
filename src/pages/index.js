@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Post from "../components/post"
-
+import Hero from "../components/hero"
 import { useStaticQuery, graphql } from "gatsby"
 
 const BlogIndex = ({ data, location }) => {
@@ -15,6 +15,7 @@ const BlogIndex = ({ data, location }) => {
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
+        <Hero />
         <SEO title="Инструкции, гайды, лайфхаки, решение проблем с React — React Developer" />
         <p>
           No blog posts found. Add markdown posts to "content/blog" (or the
@@ -27,6 +28,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
+      <Hero />
       <SEO title="Инструкции, гайды, лайфхаки, решение проблем с React — React Developer" />
       <div className="grids">
         {posts.map(post => {

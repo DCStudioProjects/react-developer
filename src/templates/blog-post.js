@@ -29,34 +29,18 @@ const BlogPostTemplate = ({ data, location }) => {
           itemProp="articleBody"
         />
         <hr />
-        <footer>
-        </footer>
       </article>
       <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
             {previous && (
               <Link to={previous.fields.slug} className="posts_nav" rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
-          </li>
-          <li>
             {next && (
               <Link to={next.fields.slug} className="posts_nav" rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}
-          </li>
-        </ul>
       </nav>
     </Layout>
   )
