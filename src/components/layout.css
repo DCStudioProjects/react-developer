@@ -16,14 +16,19 @@ a {
 
 h1 a {
   color: #000;
+  font-size: 2.5vw;
 }
 
 .top_navbar {
+  position: fixed;
+  background-color: rgba(245,245,247,0.72);
+  backdrop-filter: saturate(180%) blur(20px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1vw 2vw;
   border-bottom: 1px solid rgba(0,0,0,0.1);
+  width: 100%;
 }
 
 .desktop_nav a {
@@ -40,7 +45,7 @@ header h1 {
   justify-content: space-between;
 }
 
-.desktop_nav a, .bio a, button {
+.desktop_nav a, .bio a, .posts_nav, button {
   font-size: 1.4vw;
   padding: .8vw;
   border-radius: 50px;
@@ -50,31 +55,38 @@ header h1 {
   border: none;
 }
 
-.desktop_nav a:hover, .bio a:hover, button:hover {
+.desktop_nav a:hover {
   background: #000;
   color: #fff;
 }
+
+.bio a:hover, button:hover, .posts_nav:hover {
+  background: #0070f3;
+  color: #fff;
+  border-color: #0070f3;
+}
+
 .bio_title {
   font-size: 2.5vw;
 }
 .bio_description {
   font-size: 1.7vw;
 }
-.bio a, button {
+.bio a, button, .posts_nav {
   color: #000;
   border: 1px solid #000;
   background: transparent;
   cursor: pointer;
 }
  main {
-  padding: 2vw 10vw;
+  padding: 7vw 10vw;
 
 }
  
  .grids {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 32px;
+  margin-top: 1vw;
  }
  
  .grid_post {
@@ -94,24 +106,27 @@ header h1 {
  .grid_post p {
   margin: .4vw 0;
  }
- small {
-   border: 1px solid #000;
-   border-radius: 50px;
-   padding: .4vw;
- }
+
  .blog-post h1 {
    font-size: 3vw;
  }
- .posts_nav {
-   background-color: #fff;
-   border: 1px solid #000;
-   border-radius: 50px;
-   padding: .6vw;
-   color: #000;
+ .post_date {
+  margin: 2vw 0;
+  font-size: 1vw;
+  background: #000;
+  width: fit-content;
+  padding: .8vw;
+  border-radius: 50px;
+  color: #fff;
  }
+
  .blog-post-nav {
   display: flex;
   justify-content: space-between;
+ }
+
+ .posts_nav {
+   font-size: 1.2vw;
  }
  input {
   font-size: 1.3vw;
@@ -120,6 +135,7 @@ header h1 {
   padding: 1vw;
   outline: 0;
   margin-bottom: 1vw;
+  width: 40vw;
  }
 audio,
 canvas,
@@ -164,9 +180,7 @@ mark {
   background-color: #ff0;
   color: #000;
 }
-small {
-  font-size: 80%;
-}
+
 sub,
 sup {
   font-size: 75%;
@@ -661,6 +675,9 @@ footer p {
   .top_navbar {
     display: block;
   }
+  h1 a {
+    font-size: 6vw;
+  }
   .desktop_nav {
     overflow-x: auto;
   }
@@ -680,6 +697,7 @@ footer p {
   }
   main {
     padding: 2vw;
+    padding-top: 24vw;
   }
   .grids {
     display: block;
@@ -688,18 +706,28 @@ footer p {
   }
   .grid_post {
     margin: 3vw 1vw;
+    padding: 3vw;
   }
-  small {
-    padding: 1vw;
-  }
+
   .blog-post h1 {
     font-size: 8vw;
   }
+  .post_date {
+    padding: 2vw;
+    font-size: 3.5vw;
+   }
   .posts_nav {
     padding: 2vw;
   }
-  input, button {
+  input, button, .posts_nav {
     font-size: 5vw;
     padding: 3vw;
+  }
+  .posts_nav {
+    font-size: 4vw;
+    padding: 2vw;
+  }
+  input {
+    width: 80vw;
   }
 }
