@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: "Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   background: #fafafa;
+  overflow-x: hidden;
 }
 
 a {
@@ -129,6 +130,7 @@ header h1 {
 
  .posts_nav {
    font-size: 1.2vw;
+   margin-top: 1vw;
  }
  input {
   font-size: 1.3vw;
@@ -142,6 +144,7 @@ header h1 {
 
 footer {
   border-top: 1px solid rgba(0,0,0,0.1);
+  padding: 2vw 0;
 }
 
 footer p {
@@ -206,6 +209,7 @@ footer p {
   .posts_nav {
     font-size: 4vw;
     padding: 2vw;
+    margin-top: 3vw;
   }
   input {
     width: 80vw;

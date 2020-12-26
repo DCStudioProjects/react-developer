@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => (
     <Link to="/html">#html</Link>
     <Link to="/css">#css</Link>
     <Link to="/decoding">#декодинг</Link>
-    <Link to="/contact">#контакты</Link>
+    <Link to="/contact">#написать_мне</Link>
     </div>
   </header>
 )

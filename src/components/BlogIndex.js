@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from "./layout"
 import SEO from "./seo"
 const BlogIndex = ({ data, location }) => {
