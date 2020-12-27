@@ -121,6 +121,7 @@ header h1 {
   padding: .5vw;
   border-radius: 50px;
   color: #fff;
+  white-space: nowrap;
  }
 
  .blog-post-nav {
