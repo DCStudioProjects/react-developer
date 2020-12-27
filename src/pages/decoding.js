@@ -6,7 +6,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Post from "../components/post"
 
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`

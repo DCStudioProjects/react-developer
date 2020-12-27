@@ -5,7 +5,7 @@ import SEO from "./seo"
 const BlogIndex = ({ data, location }) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
     const posts = data.allMarkdownRemark.nodes
-  
+
     if (posts.length === 0) {
       return (
         <Layout location={location} title={siteTitle}>

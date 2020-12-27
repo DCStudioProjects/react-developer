@@ -1,7 +1,11 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { setConfig } from 'react-hot-loader'
 
+setConfig({
+    showReactDomPatchNotification: false
+})
 const Header = ({ siteTitle }) => (
   <header className="top_navbar">
     <h1>
