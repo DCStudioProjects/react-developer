@@ -35,6 +35,10 @@ module.exports = {
             options: {
               maxWidth: 630,
             },
+            resolve: `gatsby-remark-highlight-code`,
+            options: {
+            terminal: 'carbon'
+            },
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
