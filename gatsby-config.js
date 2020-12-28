@@ -20,6 +20,13 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-page-progress",
+      options: {
+        includePaths: [],
+        excludePaths: ["/contact"]
+      },
+    },
+    {
       resolve: `gatsby-plugin-disqus`,
       options: {
         shortname: `react-developer`

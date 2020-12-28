@@ -6,16 +6,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 
-let disqusConfig = {
-  url: `https://react-developer.vercel.app/`,
-  title: `{post.frontmatter.title}`,
-}
-
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
+  let disqusConfig = {
+    title: post.frontmatter.title,
+    identifier: post.id,
+    url: 'https://react-developer.vercel.app',
+  }
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
