@@ -42,12 +42,12 @@ const BlogIndex = ({ data, location }) => {
                 itemType="http://schema.org/Article"
               >
                 <header>
-                  <h2 className="post_grid_title">
+                  <h2 className="post_title">
                     <Link to={post.fields.slug} itemProp="url">
                       {title}
                     </Link>
                   </h2>
-                  <p className="post_date">{post.frontmatter.date}</p>
+                  <p className="post_grid_date">{post.frontmatter.date}</p>
                 </header>
                 <section>
                   <p

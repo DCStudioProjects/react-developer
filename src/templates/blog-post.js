@@ -4,7 +4,7 @@ import '@deckdeckgo/highlight-code';
 import { defineCustomElements as deckDeckGoElement } from '@deckdeckgo/highlight-code/dist/loader';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
+import { Disqus } from 'gatsby-plugin-disqus'
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -49,7 +49,6 @@ const BlogPostTemplate = ({ data, location }) => {
               </Link>
             )}
       </nav>
-      <CommentCount config={disqusConfig} placeholder={'...'} />
       <Disqus config={disqusConfig} />
     </Layout>
   )

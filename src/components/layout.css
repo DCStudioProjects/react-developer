@@ -1,6 +1,7 @@
 @font-face { 
   font-family: "Inter";
   src: url(fonts/Inter-Regular.woff) format("woff");
+  font-display: swap;
   font-weight: regular;
   font-style: normal;
 }
@@ -8,6 +9,7 @@
 @font-face { 
   font-family: "Inter";
   src: url(fonts/Inter-Bold.woff) format("woff");
+  font-display: swap;
   font-weight: bold;
   font-style: normal;
 }
@@ -117,9 +119,11 @@ header h1 {
   margin: 2vw;
  }
 
- .post_grid_title a {
+ .post_title a {
    color: #000;
+   font-size: 1.6vw;
  }
+ 
  .grid_post p {
   margin: .4vw 0;
  }
@@ -127,8 +131,18 @@ header h1 {
  .blog-post h1 {
    font-size: 3vw;
  }
- .post_date {
+ .post_grid_date {
   margin: 2vw 0;
+  font-size: .9vw;
+  background: #000;
+  width: fit-content;
+  padding: .5vw;
+  border-radius: 50px;
+  color: #fff;
+  white-space: nowrap;
+ }
+ .post_date {
+  margin: 1vw 0;
   font-size: 1vw;
   background: #000;
   width: fit-content;
@@ -137,7 +151,6 @@ header h1 {
   color: #fff;
   white-space: nowrap;
  }
-
  .blog-post-nav {
   display: flex;
   justify-content: space-between;
@@ -206,9 +219,16 @@ footer p {
     margin: 3vw 1vw;
     padding: 3vw;
   }
-
+  .post_title a {
+    color: #000;
+    font-size: 7vw;
+  }
   .blog-post h1 {
     font-size: 8vw;
+  }
+  .post_grid_date {
+    font-size: 3vw;
+    padding: 2vw;
   }
   .post_date {
     padding: 2vw;
