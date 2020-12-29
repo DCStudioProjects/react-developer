@@ -2,11 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
-import Post from "../components/post"
 import Hero from "../components/hero"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`

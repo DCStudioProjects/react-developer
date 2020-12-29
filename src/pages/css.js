@@ -2,11 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
-import Post from "../components/post"
-
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -40,12 +37,12 @@ const BlogIndex = ({ data, location }) => {
                 itemType="http://schema.org/Article"
               >
                 <header>
-                  <h2 className="post_grid_title">
+                  <h2 className="post_title">
                     <Link to={post.fields.slug} itemProp="url">
                       {title}
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
+                  <p className="post_grid_date">{post.frontmatter.date}</p>
                 </header>
                 <section>
                   <p
