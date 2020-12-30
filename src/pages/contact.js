@@ -5,7 +5,7 @@ import Form from "../components/form"
 
 const contact = ({ siteTitle }) => (
     <Layout>
-        <SEO title="Инструкции, гайды, лайфхаки, решение проблем с React — React Developer" />
+        <SEO title="Контакты | React Developer" />
       <p className="bio_title">Привет, меня зовут Даниил.</p>
       <p className="bio_description">Я Frontend-разработчик с большим опытом и глубоким пониманием современного стэка.</p>
       <li className="bio_description">Strong knowledge: HTML, CSS, JavaScript, React, Gatsby, WordPress, Git;</li>
