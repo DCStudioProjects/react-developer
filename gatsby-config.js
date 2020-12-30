@@ -2,13 +2,13 @@ module.exports = {
   siteMetadata: {
     title: `React Developer`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Daniil Chistyakov`,
+      summary: `Frontend-разработчик, который делает крутые приложения.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `Инструкции, обзоры, полезные фичи по React, HTML, CSS.`,
+    siteUrl: `https://react-developer.vercel.app/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `dan_chistyakov`,
     },
   },
   plugins: [
