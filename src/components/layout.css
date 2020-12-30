@@ -102,7 +102,7 @@ header h1 {
 }
 
 main {
-	padding: 7vw 10vw;
+	padding: 7vw 10vw 2vw 10vw;
 }
 
 .grids {
@@ -196,6 +196,7 @@ footer {
 footer p {
 	color: #666;
 	margin-left: 2vw;
+	font-size: 1.1vw;
 }
 
 @media only screen and (max-width: 767px) {
@@ -290,5 +291,9 @@ footer p {
 	}
 	.form_field {
 		margin-bottom: 2vw;
+	}
+	footer p {
+		font-size: 4vw;
+		padding: 3vw 0;
 	}
 }
