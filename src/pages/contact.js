@@ -9,7 +9,7 @@ const contact = ({ siteTitle }) => (
       <p className="bio_title">Привет, меня зовут Даниил.</p>
       <p className="bio_description">Я Frontend-разработчик с большим опытом и глубоким пониманием современного стэка.</p>
       <li className="bio_description">Strong knowledge: HTML, CSS, JavaScript, React, Gatsby, WordPress, Git;</li>
-      <li className="bio_description">In progress: Golang, Ruby on Rails.</li>
+      <li className="bio_description">In progress: GraphQl, VueJS</li>
       <p className="bio_description">Если тебе хочется поболтать или есть идеи по проектам или даже оффер в компанию всегда открыт предложениям :)</p>
       <p className="bio_description">Ты можешь связаться со мной через эту контактную форму.</p>
       <Form/>

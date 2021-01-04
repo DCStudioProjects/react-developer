@@ -6,7 +6,7 @@ module.exports = {
       summary: `Frontend-разработчик, который делает крутые приложения.`,
     },
     description: `Инструкции, обзоры, полезные фичи по React, HTML, CSS.`,
-    siteUrl: `https://react-developer.vercel.app/`,
+    siteUrl: `https://react-developer.vercel.app`,
     social: {
       twitter: `dan_chistyakov`,
     },
@@ -37,6 +37,14 @@ module.exports = {
       options: {
         path: `${__dirname}/content/images`,
         name: `images`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://react-developer.vercel.app',
+        sitemap: 'https://react-developer.vercel.app/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
       },
     },
     {
@@ -77,15 +85,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `React Developer`,
+        short_name: `React Developer`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#fff`,
         display: `minimal-ui`,
         icon: `content/images/icon.png`,
       },
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
