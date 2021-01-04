@@ -9,15 +9,15 @@ setConfig({
 const Header = ({ siteTitle }) => (
   <header className="top_navbar">
     <h1>
-      <Link to="/">
+      <Link to="/" className="site_title">
         {siteTitle}
       </Link>
     </h1>
     <div className="desktop_nav">
     <Link to="/react">#react</Link>
-    <Link to="/html">#html</Link>
-    <Link to="/css">#css</Link>
-    <Link to="/decoding">#декодинг</Link>
+    <Link to="/gatsby">#gatsby</Link>
+    <Link to="/vue">#vue</Link>
+    <Link to="/graphql">#graphql</Link>
     <Link to="/contact">#написать_мне</Link>
     </div>
   </header>

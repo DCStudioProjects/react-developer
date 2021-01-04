@@ -5,7 +5,7 @@ module.exports = {
       name: `Daniil Chistyakov`,
       summary: `Frontend-разработчик, который делает крутые приложения.`,
     },
-    description: `Инструкции, обзоры, полезные фичи по React, HTML, CSS.`,
+    description: `React Developer — инструкции, обзоры, полезные фичи по React, Gatsby, VueJS.`,
     siteUrl: `https://react-developer.vercel.app`,
     social: {
       twitter: `dan_chistyakov`,
