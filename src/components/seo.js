@@ -47,6 +47,14 @@ const SEO = ({ description, lang, meta, title }) => {
           content: title,
         },
         {
+          property: `og:url`,
+          content: title,
+        },
+        {
+          property: `og:locale`,
+          content: `ru`,
+        },
+        {
           property: `og:description`,
           content: metaDescription,
         },

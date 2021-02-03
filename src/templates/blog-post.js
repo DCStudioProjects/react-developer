@@ -2,9 +2,9 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import '@deckdeckgo/highlight-code';
 import { defineCustomElements as deckDeckGoElement } from '@deckdeckgo/highlight-code/dist/loader';
+import { Disqus } from 'gatsby-plugin-disqus'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Disqus } from 'gatsby-plugin-disqus'
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -12,10 +12,11 @@ const BlogPostTemplate = ({ data, location }) => {
   const { previous, next } = data
 
   let disqusConfig = {
-    title: post.frontmatter.title,
+    url: data.site.siteMetadata.siteUrl + post.fields.slug,
     identifier: post.id,
-    url: 'https://react-developer.vercel.app',
+    title: post.frontmatter.title,
   }
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
@@ -66,6 +67,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     markdownRemark(id: { eq: $id }) {
@@ -76,6 +78,9 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+      }
+      fields {
+        slug
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

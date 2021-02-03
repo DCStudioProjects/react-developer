@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `React Developer`,
+    title: `Frontendika`,
     author: {
       name: `Daniil Chistyakov`,
       summary: `Frontend-разработчик, который делает крутые приложения.`,
     },
-    description: `React Developer — инструкции, обзоры, полезные фичи по React, Gatsby, VueJS.`,
+    description: `Frontendika — инструкции, обзоры, полезные фичи по React, Gatsby, VueJS.`,
     siteUrl: `https://react-developer.vercel.app`,
     social: {
       twitter: `dan_chistyakov`,

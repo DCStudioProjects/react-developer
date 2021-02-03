@@ -14,7 +14,7 @@ const BlogIndex = ({ data, location }) => {
     return (
       <Layout location={location} title={siteTitle}>
         <Hero />
-        <SEO title="Инструкции, гайды, лайфхаки, решение проблем с React — React Developer" />
+        <SEO title="React Developer — всё о мире React" />
         <p>
           No blog posts found. Add markdown posts to "content/blog" (or the
           directory you specified for the "gatsby-source-filesystem" plugin in
